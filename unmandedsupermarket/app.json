@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "myPages/index/index",
+    "myPages/person/person",
+    "myPages/server/server",
+    "myPages/map/map",
+    "myPages/House_display/House_display",
+    "myPages/test/test",
+    "myPages/clear/clear"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTextStyle": "#fff",
+    "navigationBarTitleText": "无人民宿",
+    "backgroundColor": "#fbf9fe",
+    "backgroundTextStyle": "light"
+  },
+    "tabBar": {
+      "color": "#999",
+      "selectedColor": "#2EBF76",
+      "borderStyle": "white",
+      "backgroundColor": "#f6f8f9",
+      "position": "bottom",
+      "list": [
+        {
+          "pagePath": "myPages/index/index",
+          "text": "主页",
+          "iconPath":"images/index.png",
+          "selectedIconPath":"images/sectedindex.png"
+        },
+        {
+          "pagePath": "myPages/server/server",
+          "text": "密码",
+          "iconPath": "images/ico/password.png",
+          "selectedIconPath": "images/sectedperson.png"
+        },
+        {
+          "pagePath": "myPages/person/person",
+          "text": "个人中心",
+          "iconPath":"images/person.png",
+          "selectedIconPath":"images/sectedperson.png"
+        }
+   
+      ]
+    },
+    "networkTimeout":{
+      "request":10000,
+      "connectSocket":10000,
+      "uploadFile":10000,
+      "downloadFile":10000
+    },
+    "debug":true
+}

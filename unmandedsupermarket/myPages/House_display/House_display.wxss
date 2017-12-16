@@ -1,0 +1,26 @@
+.page-body{
+  display: flex;
+  flex-direction: column;
+}
+.page-house-item{
+  width: 100%;
+  height: 200rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.page-house-left{
+  width: 300rpx;
+  height: 200rpx;
+}
+.page-house-right{
+  width: 100%;
+  padding: 40rpx;
+}
+.houseName{
+  font-size: 40rpx;
+}
+.housePrice{
+  font-size: 35rpx;
+  color: red;
+}

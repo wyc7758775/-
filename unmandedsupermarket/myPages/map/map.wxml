@@ -1,0 +1,11 @@
+<view class="container">
+  <view class='page-section page-section-gap'>
+    <map
+      style='width:100%;height:1200rpx;'
+      latitude='{{latitude}}'
+      longitude='{{longitude}}'
+      markers='{{markers}}'
+      covers='{{covers}}'
+    ></map>
+  </view>
+</view>

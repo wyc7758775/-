@@ -1,0 +1,19 @@
+<view class="section">
+
+  <view class="flex-wrp flex-col">
+    <view class='flex-item1'>
+      <view class='flex-prompt'><view class='flex-radius flex-left-radius'></view>
+      请扫描绑定身份
+      <view class='flex-radius flex-right-radius'></view>
+      </view>
+    </view>
+    <view>{{result}}</view>
+    <view bindtap='qwe' class="flex-item2 bc_green">
+      <view class='flex-saoma' type="primary" bindtap='scanCode'>
+         点我绑脸
+      <view class='huoqupassword'>获取密码</view>
+      </view>
+      
+    </view>
+  </view>
+</view>

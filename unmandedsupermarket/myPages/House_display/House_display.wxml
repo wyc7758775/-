@@ -1,0 +1,11 @@
+<view class="container">
+  <view class='page-body'>
+    <view class='page-house-item' wx:for="{{zhihu}}">
+      <image src="{{item.images}}" class='page-house-left'></image>
+      <view class='page-house-right'>
+        <view class='houseName'>{{item.title}}</view>
+        <view class='housePrice'>${{item.id}}</view>
+      </view>
+    </view>
+  </view>
+</view>

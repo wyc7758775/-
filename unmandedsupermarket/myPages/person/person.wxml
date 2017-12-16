@@ -1,0 +1,79 @@
+<view class="container">
+  <view class="page-body">
+    <view class="page-section">
+      <view class="page-body-info" bindtap="getUserInfo">
+        <block wx:if="{{hasUserInfo === false}}">
+          <text class="page-body-text">{{getUserFalse}}</text>
+          <text class="page-body-text"></text>
+        </block>
+        <block wx:if="{{hasUserInfo === true}}">
+          <image class="userinfo userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+          <text class="userinfo userinfo-nickname">{{userInfo.nickName}}</text>
+          <text class="userinfo userinfo-nickname"><text class='userinfochongzhi'>{{info}}</text></text>
+        </block>
+      </view>
+      <view class='page-center'>
+        <view class='page-center-item'>
+          <image class='page-center-img' src='{{continuedRoomSrc}}'></image>
+          <view class='page-center-dec'> {{continuedRoom}}</view>
+        </view>
+        <view class='page-center-item'>
+          <image class='page-center-img' src='{{passwordSrc}}'></image>
+          <view class='page-center-dec'> {{password}}</view>
+        </view>
+        <view class='page-center-item'>
+          <image class='page-center-img' src='{{reservationSrc}}'></image>
+          <view class='page-center-dec'> {{reservation}}</view>
+        </view>
+      </view>
+      <view class='page-bottom'>
+        <view class='page-bottom-item'>
+          <image class='page-bottom-img' src='{{checkoutSrc}}'></image>
+          <view class='page-bottom-dec'>{{checkout}}</view>
+          <view class='page-bottom-arro'>
+            <image class='arro-img' src='{{qianjing}}'></image>
+          </view>
+        </view>
+        <view class='page-bottom-item' bindtap='toastClear'>
+          <image class='page-bottom-img' src='{{cleanSrc}}'></image>
+          <view class='page-bottom-dec'>{{clean}}</view>
+          <view class='page-bottom-arro'>
+            <image class='arro-img' src='{{qianjing}}'></image>
+          </view>
+        </view>
+        <view class='page-bottom-item' bindtap='modalTap'>
+          <image class='page-bottom-img' src='{{wakeSrc}}'></image>
+          <view class='page-bottom-dec'>{{wake}}</view>
+          <view class='page-bottom-arro'>
+            <image class='arro-img' src='{{qianjing}}'></image>
+          </view>
+        </view>
+        <view class='page-bottom-item'>
+          <image class='page-bottom-img' src='{{balanceSrc}}'></image>
+          <view class='page-bottom-dec'>{{balance}}</view>
+          <view class='page-bottom-arro'>
+            <view class='page-bottom-balatrr'>{{balanceatrr}}</view>
+            <view style='position:absolute;right:40rpx;color:red;font-size:30rpx'>元</view>
+            <image class='arro-img' src='{{qianjing}}'></image>
+          </view>
+        </view>
+        <view class='page-bottom-item'>
+          <image class='page-bottom-img' src='{{customerServiceSrc}}'></image>
+          <view class='page-bottom-dec'>{{customerService}}</view>
+          <view class='page-bottom-arro'>
+            <image class='arro-img' src='{{qianjing}}'></image>
+          </view>
+        </view>
+        <view class='page-bottom-item'>
+          <image class='page-bottom-img' src='{{aboutSrc}}'></image>
+          <view class='page-bottom-dec'>{{about}}</view>
+          <view class='page-bottom-arro'>
+            <image class='arro-img' src='{{qianjing}}'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+</view>
